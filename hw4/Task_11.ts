@@ -1,4 +1,7 @@
 //Task 11
+// Дано произвольное число.
+// Реализовать метод возводящий число в степень. Степень возведения указывается как параметр к методу.
+
 let myNumber3: number = 7;
 
-console.log(Math.pow(myNumber3,7))
+console.log(Math.pow(myNumber3, 7))

@@ -1,4 +1,7 @@
 //Task 12
+// Реализовать метод получения рандомного целочисленного числа в заданном диапазоне.
+// Диапазон задается аргументами фунции
+
 const min: number = Math.floor(5);
 const max: number = Math.floor(30);
 const result: number = Math.floor(Math.random() * (max - min)) + min;
