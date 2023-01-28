@@ -1,8 +1,6 @@
 "use strict";
 //Task 4
-let a = 1;
-let b = 2;
-let c = ' белых медведей';
-console.log(typeof String(a));
-console.log(typeof String(b));
+let k = 1;
+let l = 2;
+let m = ' белых медведей';
 console.log('1' + '2' + ' белых медведей');

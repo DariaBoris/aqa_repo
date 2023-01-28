@@ -4,6 +4,6 @@ const secInMin = 60;
 const minInHour = 60;
 const hourInDay = 24;
 const dayInYear = 365;
-const myAge = 31;
-const myAgeInSeconds = secInMin * minInHour * hourInDay * dayInYear * myAge;
+const myAge1 = 31;
+const myAgeInSeconds = secInMin * minInHour * hourInDay * dayInYear * myAge1;
 console.log(myAgeInSeconds);

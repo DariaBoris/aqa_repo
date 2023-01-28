@@ -7,7 +7,7 @@ const apple = false;
 const orange = true;
 const shouldGoToWork = 'You can go to work';
 const shouldNotGoToWork = 'You cannot go to work';
-if (key && documents && pen && apple || orange) {
+if (key && documents && pen && apple || orange) { //если apple && orange то все равно 'You can go to work
     console.log(shouldGoToWork);
 }
 else {

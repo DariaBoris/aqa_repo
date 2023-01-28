@@ -1,17 +1,20 @@
 "use strict";
 //Task 13
-let goTo = 'хихи';
-'юг';
-console.log('На юг пойдешь счастье найдешь');
-break;
-'север';
-console.log('На север пойдешь много денег найдешь');
-break;
-'запад';
-console.log('На запад пойдешь верного друга найдешь');
-break;
-'восток';
-console.log('На восток пойдешь разработчиком станешь');
-break;
-console.log('Попробуй еще раз');
-break;
+let goTo = 'восток';
+switch (goTo) {
+    case 'юг':
+        console.log('На юг пойдешь счастье найдешь');
+        break;
+    case 'север':
+        console.log('На север пойдешь много денег найдешь');
+        break;
+    case 'запад':
+        console.log('На запад пойдешь верного друга найдешь');
+        break;
+    case 'восток':
+        console.log('На восток пойдешь разработчиком станешь');
+        break;
+    default:
+        console.log('Попробуй еще раз');
+        break;
+}

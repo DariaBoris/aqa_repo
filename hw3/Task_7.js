@@ -1,8 +1,8 @@
 "use strict";
 //Task 7
-const a = 'true';
-const b = false;
-const c = 17;
-const d = undefined;
-const e = null;
-console.log(typeof a + ', ' + typeof b + ', ' + typeof c + ', ' + typeof d + ', ' + typeof e);
+const one = 'true';
+const two = false;
+const three = 17;
+const four = undefined;
+const five = null; //почему object?
+console.log(typeof one + ', ' + typeof two + ', ' + typeof three + ', ' + typeof four + ', ' + typeof five);
