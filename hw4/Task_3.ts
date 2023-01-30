@@ -3,10 +3,13 @@
 // Если переданное число больше длины строки, то должно отобразиться сообщение:
 // `Вы вышли за границу строки`
 
-const cat: string = 'I love my cat'; //13 символов
-
-if (cat.length < 14) {
-    console.log('Вы вышли за границу строки')
+function myFunction3(cat: string): string {
+    if (cat.length > 15) {
+        console.log('Вы вышли за границу строки.')
+    }
+    return (cat)
 }
+
+myFunction3('I love my cat.')
 
 

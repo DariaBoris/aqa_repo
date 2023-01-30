@@ -4,7 +4,6 @@
 
 const myString1: string = 'Я учу TypeScript!';
 
-console.log(myString1)
+console.log(myString1.slice(0, 6)); // Я учу
 
-console.log(myString1.slice(2));
-console.log(myString1.substring(2))
+console.log(myString1.substring(6, 16)) // TypeScript!

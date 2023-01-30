@@ -2,6 +2,9 @@
 // Дано произвольное число.
 // Реализовать метод возводящий число в степень. Степень возведения указывается как параметр к методу.
 
-let myNumber3: number = 7;
+function myFunction11(Num: number, powNum: number): number {
+    console.log((Math.pow(Num, powNum)))
+    return (Math.pow(Num, powNum));
+}
 
-console.log(Math.pow(myNumber3, 7))
+myFunction11(3, 3)

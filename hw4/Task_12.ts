@@ -2,11 +2,12 @@
 // Реализовать метод получения рандомного целочисленного числа в заданном диапазоне.
 // Диапазон задается аргументами фунции
 
-const min: number = Math.floor(5);
-const max: number = Math.floor(30);
-const result: number = Math.floor(Math.random() * (max - min)) + min;
+function myFunction12(min: number, max: number): number {
+    console.log(Math.floor(Math.random() * (max - min)) + min)
+    return (Math.floor(Math.random() * (max - min)) + min);
+}
 
-console.log(result);
+myFunction12(5, 10);
 
 // Math.floor - округляет до целого
 // Math.random - задает диапазон [0, 1)
