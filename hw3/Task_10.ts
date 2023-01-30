@@ -20,7 +20,7 @@ const orange: boolean = true;
 const shouldGoToWork: string = 'You can go to work';
 const shouldNotGoToWork: string = 'You cannot go to work';
 
-if (key && documents && pen && apple || orange) {   //если apple && orange то все равно 'You can go to work
+if ((key && documents && pen) && (apple || orange)) {
     console.log(shouldGoToWork)
 } else {
     console.log(shouldNotGoToWork)

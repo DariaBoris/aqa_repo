@@ -11,6 +11,7 @@
 // ```
 // Не забудьте вопспользоваться циклами
 
+//Option 1
 let pyramid: string = '';
 const heightOfPyramid: number = 6;            // будет 6 строк
 
@@ -23,3 +24,8 @@ for (let i = 1; i <= heightOfPyramid; i++) { //формируем строки �
 }
 
 console.log(pyramid);
+
+//Option 2
+for (let i = 1; i <= 6; i++) {
+    console.log('#'.repeat(i))
+}

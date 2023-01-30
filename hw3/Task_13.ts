@@ -27,5 +27,4 @@ switch (goTo) {
         break;
     default:
         console.log('Попробуй еще раз');
-        break;
 }

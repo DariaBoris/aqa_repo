@@ -6,8 +6,8 @@
 // ```
 // С помощью условий выведите в консоль разработчика наибольшее число.
 
-let height: number = 15;
-let width: number = 20;
+let height: number = 6;
+let width: number = 15;
 
 if (height > width) {
     console.log(height);
