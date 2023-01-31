@@ -5,12 +5,14 @@
 // и **false** в любом другом случае.
 
 
-function triangle (a: number, b: number, c: number) {
-    if (b + c > a && a + c > b && a +b > c) {
+function triangle(a: number, b: number, c: number) {
+    if (b + c > a && a + c > b && a + b > c) {
         return true
-    }
-    else {
+    } else {
         return false
     }
 }
+
 console.log(triangle(1, 2, 3))
+
+// Треугольник можно построить, если сумма длин двух любых его сторон больше длины третьей стороны.
