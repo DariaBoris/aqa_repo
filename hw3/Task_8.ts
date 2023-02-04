@@ -6,11 +6,13 @@
 // ```
 // С помощью условий выведите в консоль разработчика наибольшее число.
 
-let height: number = 6;
+let height: number = 15;
 let width: number = 15;
 
 if (height > width) {
     console.log(height);
-} else {
+} else if (height < width){
     console.log(width);
+} else {
+    console.log('Числа равны')
 }
