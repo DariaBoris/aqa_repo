@@ -5,7 +5,7 @@
 // и **false** в любом другом случае.
 
 
-function triangle(a: number, b: number, c: number) {
+function triangle(a: number, b: number, c: number): boolean {
     if (b + c > a && a + c > b && a + b > c) {
         return true
     } else {

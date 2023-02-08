@@ -5,13 +5,20 @@
 // + функцию **boo** которая выводит в консоль свое имя
 // Если переданное булевое значение **true** запускаем функцию **foo** иначе **boo**
 
-function fooBoo (myBool: boolean): boolean {
-    if (myBool = true) {
-        console.log('Foo')  // It always returns 'Foo', whyyy? It throws a warning: 'myBool = true' used as condition.
-    } else {
-        console.log('Boo')
-    }
-    return(myBool)
+function foo(): void {
+    console.log("foo");
 }
 
-console.log(fooBoo(false))
+function boo(): void {
+    console.log("boo");
+}
+
+function fooboo(myBool: boolean): void {
+    if (myBool = true) {
+        foo();
+    } else if (myBool = false) {
+        boo();
+    }
+}
+
+fooboo(false); // throws 'foo' when false though it should be 'boo' instead

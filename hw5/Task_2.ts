@@ -15,28 +15,3 @@ function credit(sumOfCredit: number) {
 }
 
 console.log(credit(1000))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let sumOfCredit: number = 1000;
-// let percent: number = 0.17;
-// let years: number = 5;
-//
-// function credit(sumOfCreditOverPay: number) {
-//     sumOfCreditOverPay = sumOfCredit - (sumOfCredit * percent) * years
-//     return sumOfCreditOverPay
-// }
-//
-// console.log(credit(1000))
-

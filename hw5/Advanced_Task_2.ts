@@ -10,15 +10,16 @@
 // (поскольку надломы не требуются, если у нас нет шоколада для разделения).
 // Ввод всегда будет неотрицательным целым числом.
 
-let amountOfBreaks: number;
-
-function choco(chocoLength: number, chocoWidth: number) {
+function choco(chocoLength: number, chocoWidth: number): number {
+    let amountOfBreaks: number;
     if (chocoLength <= 0 && chocoWidth <= 0) {
-        console.log('Cannot break')
+        console.log('0')
     } else {
         amountOfBreaks = (chocoWidth * chocoLength) - 1
         return amountOfBreaks
     }
+    // @ts-ignore
+    return (amountOfBreaks)
 }
 
-console.log(choco(3, 1))
+console.log(choco(0, 0))

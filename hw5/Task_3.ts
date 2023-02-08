@@ -7,7 +7,7 @@
 
 let myString4: string = 'I love my cat';
 
-function trimString(from:number, till:number) {
+function trimString(from: number, till: number) {
     return myString4.substring(from, till);
 }
 
