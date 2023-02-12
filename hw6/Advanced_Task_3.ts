@@ -14,7 +14,7 @@ const dog: typeDogs = {
 };
 
 // const dog2 = Object.assign({}, dog);           // способ 1
-const dog2 = JSON.parse (JSON.stringify(dog))    // способ 2
+const dog2 = JSON.parse(JSON.stringify(dog))    // способ 2
 
 dog.age = 7;
 dog2.age = 5;

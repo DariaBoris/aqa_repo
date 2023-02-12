@@ -12,8 +12,8 @@ let student2 = {
     age: 27
 }
 
-function compareObj (student1: any, student2: any): any {
+function compareObj(student1: any, student2: any): any {
     console.log(JSON.stringify(student1) === JSON.stringify(student2)); // переводим в строку
 }
 
-compareObj(student1,student2)
+compareObj(student1, student2)
