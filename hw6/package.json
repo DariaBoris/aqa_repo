@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --config .prettierrc files/*ts --write",
-    "lint": "eslint files/*.ts",
-    "lint:fix": "eslint files/*.ts --quiet --fix",
-    "prepare": "husky install"
+    "format": "../node_modules/.bin/prettier --config .prettierrc files/*ts --write",
+    "lint": "../node_modules/.bin/eslint files/*.ts",
+    "lint:fix": "../node_modules/.bin/eslint files/*.ts --quiet --fix",
+    "prepare": "../node_modules/.bin/husky install"
   },
   "author": "",
   "license": "ISC",
