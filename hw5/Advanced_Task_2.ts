@@ -11,14 +11,13 @@
 // Ввод всегда будет неотрицательным целым числом.
 
 function choco(chocoLength: number, chocoWidth: number): number {
-    let amountOfBreaks: number;
+    let amountOfBreaks: number = 0;
     if (chocoLength <= 0 && chocoWidth <= 0) {
         console.log('0')
     } else {
         amountOfBreaks = (chocoWidth * chocoLength) - 1
         return amountOfBreaks
     }
-    // @ts-ignore
     return (amountOfBreaks)
 }
 

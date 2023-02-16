@@ -16,7 +16,7 @@ let sum5: number;
 function getSum1(a5: number, b5: number) {
     if (a5 != b5) {
         sum5 = (a5 + b5) * (b5 - a5 + 1) / 2 // (A+B)*(B-A+1)/2
-    } else if (a5 === b5) {
+    } else {
         return a5 || b5
     }
     return (sum5)
