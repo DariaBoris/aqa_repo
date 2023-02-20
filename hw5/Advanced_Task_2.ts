@@ -15,9 +15,9 @@ function choco(chocoLength: number, chocoWidth: number): number {
     if (chocoLength <= 0 && chocoWidth <= 0) {
         console.log('0')
     } else {
-        amountOfBreaks = (chocoWidth * chocoLength) - 1
+       console.log(amountOfBreaks = (chocoWidth * chocoLength) - 1)
     }
     return (amountOfBreaks)
 }
 
-console.log(choco(4, 2))
+choco(3, 1)
