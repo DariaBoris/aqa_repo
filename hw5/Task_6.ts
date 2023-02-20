@@ -13,12 +13,13 @@ function boo(): void {
     console.log("boo");
 }
 
-function fooboo(myBool: boolean): void {
-    if (myBool = true) {
-        foo();
-    } else if (myBool = false) {
-        boo();
+function fooboo(myBool: boolean, f1: () => void, f2: () => void): void {
+    if (myBool === true) {
+        f1();
+    } else {
+        f2();
     }
 }
 
-fooboo(false); // throws 'foo' when false though it should be 'boo' instead
+fooboo(false, foo, boo);
+fooboo(true, foo, boo);
