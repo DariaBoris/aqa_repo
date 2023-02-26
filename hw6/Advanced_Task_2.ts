@@ -12,13 +12,8 @@ let student2 = {
     age: 27
 }
 
-function compareObj(equalOrNot: boolean, student1: any, student2: any): boolean {
-    if (JSON.stringify(student1) === JSON.stringify(student2)) {
-        console.log(equalOrNot = true)
-    } else {
-        console.log(equalOrNot = false)
-    }
-    return(equalOrNot)
+function compareObj(student1: any, student2: any): boolean {
+    return (JSON.stringify(student1) === JSON.stringify(student2))
 }
 
-compareObj(true, student1, student2)
+console.log(compareObj(student1, student2))
