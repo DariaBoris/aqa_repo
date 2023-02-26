@@ -5,7 +5,7 @@
 // ```
 // > Реализуйте решение двумя способами, используя `function declaration` & `arrow function`.
 
-const newFibonacci: number [] = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987]
+const newFibonacci: number[] = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987]
 
 const sumResult: number = newFibonacci.reduce((accum: number, value: number) => {
     accum += value;

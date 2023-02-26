@@ -3,7 +3,7 @@
 // > Реализуйте решение двумя способами, используя `function declaration` & `arrow function`.
 // Реализуйте оба варианта, когда результирущее значение true или false
 
-const num: number [] = [1, 3, 15, 20, 25];
+const num: number[] = [1, 3, 15, 20, 25];
 
 const resTrue: boolean = num.some((value: number) => {
     return value % 3 === 0 && value % 5 === 0;

@@ -3,7 +3,7 @@
 // > Реализуйте решение двумя способами, используя `function declaration` & `arrow function`.
 // Реализуйте оба варианта, когда результирущее значение true или false
 
-const numb: number [] = [2, 8];    // 4*4 = 16; 1 + 6 = 7
+const numb: number[] = [2, 8];    // 4*4 = 16; 1 + 6 = 7
 
 const result: boolean = numb.every((value: number) => {
     let w = Math.pow(value, 2)

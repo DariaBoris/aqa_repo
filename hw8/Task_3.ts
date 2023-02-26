@@ -5,9 +5,9 @@
 // ```
 // > Реализуйте решение двумя способами, используя `function declaration` & `arrow function`.
 
-const numbers: number [] = [7, -4, 32, -90, 54, 32, -21]
+const numbers: number[] = [7, -4, 32, -90, 54, 32, -21]
 
-const newNumbers: number [] = numbers.filter((value: number) => {
+const newNumbers: number[] = numbers.filter((value: number) => {
     return value >= 0;
 })
 
