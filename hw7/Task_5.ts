@@ -8,7 +8,7 @@
 const cats: string [] = ['Gachito', 'Tom', 'Batman']
 
 for (let i = 0; i < cats.length; i++) {
-    console.log(cats [i])
+    console.log(cats[i])
 }
 
 for (const string of cats) {

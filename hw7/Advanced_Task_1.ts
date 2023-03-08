@@ -2,13 +2,12 @@
 // Task 1
 // Реализуйте функцию которая будет проверять, является ли слово палиндромом.
 
-function isPalindrom(data: string): string {
+function isPalindrom(data: string): void{
     if (data.split("").reverse().join("") == data) {
         console.log("Это палиндром")
     } else {
         console.log("Это не палиндром")
     }
-    return (data)
 }
 
 isPalindrom('level')

@@ -16,9 +16,7 @@ const matrix: number [] [] = [
         [9092, 22, 45, 90000],
 ]
 
-// @ts-ignore
-let joinedMatrix: number [] = [].concat(matrix[0], matrix[1], matrix[2], matrix[3]) // как убрать ошибку?
-console.log(joinedMatrix);
+let joinedMatrix: number [] = matrix[0].concat(matrix[1], matrix[2], matrix[3])
 
 let sum: number = 0;
 
