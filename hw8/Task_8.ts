@@ -12,7 +12,7 @@ const salad = new Map<string, number>( [
     ['сметана', 110],
 ]);
 
-salad.forEach((value: number, key: string, ) => {
+salad.forEach((value: number, key: string) => {
    if (value > 100) {
        console.log(key)
    }
