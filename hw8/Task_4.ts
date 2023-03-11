@@ -12,7 +12,4 @@ const sumResult: number = newFibonacci.reduce((accum: number, value: number) => 
     return accum
 }, 0);                                  // 0 здесь initial value присваивается accum для первой итерации, далее не используется
 
-
-// const sumResult: number = newFibonacci.reduce((accum, value, index, array: number []) => accum += value);
-
 console.log(sumResult)

@@ -7,10 +7,11 @@
 
 const numbers: number[] = [7, -4, 32, -90, 54, 32, -21]
 
-const newNumbers: number[] = numbers.filter((value: number) => {
+const newNumbers: number[] = numbers.filter( function (value: number) {
     return value >= 0;
 })
-
-// const newNumbers: number [] = numbers.filter((value: number, index: number, array: number []) => value >= 0);
-
 console.log(newNumbers)
+
+const new_Numbers: number [] = numbers.filter((value: number) => value >= 0);
+
+console.log(new_Numbers)

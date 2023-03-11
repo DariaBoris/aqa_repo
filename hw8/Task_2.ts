@@ -10,10 +10,11 @@
 
 const users: string [] = ['Darya', 'Masha', 'Denis', 'Vitaliy', 'Polina', 'Anton'];
 
-const newUsers: string [] = users.map((value: string, index: number) => {
+const newUsers: string [] = users.map(function (value: string, index: number) {
     return (`member ${index + 1}: ${value}`)
 });
-
-// const newUsers: string [] = users.map((value: string, index: number) => (`member ${index + 1}: ${value}`));
-
 console.log(newUsers)
+
+const new_Users: string [] = users.map((value: string, index: number) => (`member ${index + 1}: ${value}`));
+
+console.log(new_Users)
