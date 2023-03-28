@@ -54,5 +54,3 @@ console.log(son)
 
 // const daughter = new Children('Sarah', 'Brown', 18, true).sayHi()
 // console.log(daughter)
-
-
