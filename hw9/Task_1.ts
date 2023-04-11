@@ -5,19 +5,19 @@
 // значение которого должно подставляться в фразу, которую выводит метод выше.
 
 class Animal {
-    static type: string = 'frog';
+    static animalType: string = 'frog';
     name: string;
 
-    constructor(type: string, name: string) {
+    constructor(animalType: string, name: string) {
         this.name = name;
     }
     showPhrase() {
-        return `This is a ${Animal.type}. It's name is ${this.name}.`
+        return `This is a ${Animal.animalType}. It's name is ${this.name}.`
     }
 }
 
-const frog1 = new Animal(Animal.type, 'Froggy').showPhrase()
+const frog1 = new Animal(Animal.animalType, 'Froggy').showPhrase()
 console.log(frog1)
 
-const frog2 = new Animal(Animal.type, 'Franny').showPhrase()
+const frog2 = new Animal(Animal.animalType, 'Franny').showPhrase()
 console.log(frog2)
