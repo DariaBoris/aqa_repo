@@ -2,17 +2,19 @@
 // Создайте два объекта людей. Реализуйте метод, который выводит строку `My name is <name>`.
 // И в зависимости от контекста выполнения, этот метод должен выводить соответвующее имя
 
-const human1: {name: string} = {
-    name: 'Vasya',
-};
+class Human {
+    name: string
 
-const human2: {name: string} = {
-    name: 'Petya',
-};
-
-function sayMyName(this: {name: string}) {
-    console.log(`My name is ${this.name}.`);
+    constructor(name: string) {
+        this.name = name;
+    }
+    sayMyName() {
+        return `My name is ${this.name}.`
+    }
 }
 
-sayMyName.call(human1)
-sayMyName.call(human2)
+const human1 = new Human('Petya').sayMyName()
+console.log(human1)
+
+const human2 = new Human('Vasya').sayMyName()
+console.log(human2)

@@ -3,19 +3,21 @@
 // В зависимости от контекста выполнения, этот метод должен выводить соответвующую информацию о машинах.
 // К примеру `This car has 3 doors and this is left-hand drive car`
 
-const car1 = {
-    numOfDoors: 4,
-    steeringWheelSide: 'left-hand',
-};
+class Cars {
+    numOfDoors: number;
+    steeringWheelSide: string;
 
-const car2 = {
-    numOfDoors: 6,
-    steeringWheelSide: 'right-hand',
-};
-
-function giveCarInfo (this: any) {
-    console.log(`This car has ${this.numOfDoors} doors and this is a ${this.steeringWheelSide} drive car.`)
+    constructor( numOfDoors: number, steeringWheelSide: string) {
+        this. numOfDoors =  numOfDoors;
+        this.steeringWheelSide = steeringWheelSide;
+    }
+    getCarInfo() {
+        return `This car has ${this.numOfDoors} doors and this is a ${this.steeringWheelSide} drive car.`
+    }
 }
 
-giveCarInfo.call(car1)
-giveCarInfo.call(car2)
+const car1 = new Cars(6,'right-hand').getCarInfo()
+console.log(car1)
+
+const car2 = new Cars(4,'left-hand').getCarInfo()
+console.log(car2)
