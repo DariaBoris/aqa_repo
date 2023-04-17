@@ -5,45 +5,43 @@
 
 class Calculator {
 
-    constructor(){}
-
-    sum(a: number, b: number){
+    public sum(a: number, b: number){
         return a + b
     }
 
-    deduction(a: number, b: number){
+    public deduction(a: number, b: number){
         return a - b
     }
 
-    multiply(a: number, b: number){
+    public multiply(a: number, b: number){
         return a * b
     }
 
-    division(a: number, b: number){
-        return a / b
+    public division(a: number, b: number){
+        return a / b - 1
     }
 
 }
 
 const myCalculator = new Calculator()
 
-const testSum = myCalculator.sum(5,5) === 10 ? 'Test passed' : 'Test failed'
-console.log(testSum)
+const f1 = () => console.log('Test passed');
+const f2 = () => console.log('Test failed');
 
-const testDed = myCalculator.deduction(10,5) === 5 ? 'Test passed' : 'Test failed'
-console.log(testDed)
+myCalculator.sum(5,5) === 10 ? f1() : f2()
 
-const testMult= myCalculator.multiply(5,5) === 25 ? 'Test passed' : 'Test failed'
-console.log(testMult)
+myCalculator.deduction(10,5) === 5 ? f1() : f2()
 
-const testDiv= myCalculator.division(5,5) === 1 ? 'Test passed' : 'Test failed'
-console.log(testDiv)
+myCalculator.multiply(5,5) === 25 ? f1() : f2()
 
-const testDivByZero = myCalculator.division(5,0) === Infinity ? 'Test passed' : 'Test failed'
-console.log(testDivByZero)
+myCalculator.division(5,5) === 1 ? f1() : f2()
 
-const testDivFractions = myCalculator.division(5,2) === 2.5 ? 'Test passed' : 'Test failed'
-console.log(testDivFractions)
+myCalculator.division(5,0) === Infinity ? f1() : f2()
 
-const testSumNegativeFigure = myCalculator.sum(-5,5) === 0 ? 'Test passed' : 'Test failed'
-console.log(testSumNegativeFigure)
+myCalculator.division(5,2) === 2.5 ? f1() : f2()
+
+myCalculator.sum(-5,5) === 0 ? f1() : f2()
+
+myCalculator.division(5,0) === Infinity ? f1() : f2()
+
+myCalculator.sum(0,1) === 0 ? f1() : f2()
