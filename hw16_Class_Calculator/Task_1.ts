@@ -3,7 +3,7 @@
 // и принимает 2 параметра: 2 цифры.
 // Написать 10 положительных и отрицательных тестов по вызову данных функции.
 
-class Calculator {
+export class Calculator {
 
     public sum(a: number, b: number){
         return a + b
